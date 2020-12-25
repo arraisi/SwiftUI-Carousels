@@ -17,14 +17,17 @@ struct CarouselsView: View {
     @State var itemIndexListCenter : CGFloat = 0
     
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack {
+//        ScrollView(showsIndicators: false) {
+        VStack(spacing: 0) {
                 
                 // STYLE 1
                 VStack {
                     
                     HStack {
                         Text("Style 1")
+                            .fontWeight(.bold)
+                        Divider()
+                        Text("Image : \(Int(self.itemIndexSnap)+1)")
                         Spacer()
                         Button(action: {
                             if Int(itemIndexSnap) < data.dataSnapCarousel.count-1 {
@@ -51,6 +54,9 @@ struct CarouselsView: View {
                     
                     HStack {
                         Text("Style 2")
+                            .fontWeight(.bold)
+                        Divider()
+                        Text("Image : \(Int(self.itemIndexList)+1)")
                         Spacer()
                         Button(action: {
                             if Int(itemIndexList) < data.dataList2Carousel.count-1 {
@@ -78,6 +84,9 @@ struct CarouselsView: View {
                     
                     HStack {
                         Text("Style 3")
+                            .fontWeight(.bold)
+                        Divider()
+                        Text("Image : \(Int(self.itemIndexListCenter)+1)")
                         Spacer()
                         Button(action: {
                             if Int(itemIndexListCenter) < data.dataListCenterCarousel.count-1 {
@@ -102,8 +111,8 @@ struct CarouselsView: View {
                 
             }
             
-            HStack {Spacer()}
-        }
+//            HStack {Spacer()}
+//        }
     }
 }
 
