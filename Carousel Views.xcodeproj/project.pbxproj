@@ -11,6 +11,13 @@
 		C089B21525955B8500048720 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089B21425955B8500048720 /* ContentView.swift */; };
 		C089B21725955B8600048720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C089B21625955B8600048720 /* Assets.xcassets */; };
 		C089B21A25955B8600048720 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C089B21925955B8600048720 /* Preview Assets.xcassets */; };
+		C089B23625956F4600048720 /* CarouselSnapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089B23525956F4600048720 /* CarouselSnapView.swift */; };
+		C089B23A259575F800048720 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089B239259575F800048720 /* CardView.swift */; };
+		C089B23D2595764B00048720 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089B23C2595764B00048720 /* Card.swift */; };
+		C089B241259577CE00048720 /* CarouselListCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089B240259577CE00048720 /* CarouselListCenterView.swift */; };
+		C089B2452595782E00048720 /* CardModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089B2442595782E00048720 /* CardModelView.swift */; };
+		C089B24825957E9100048720 /* CarouselListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089B24725957E9100048720 /* CarouselListView.swift */; };
+		C089B2542595987900048720 /* CarouselsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089B2532595987900048720 /* CarouselsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		C089B21625955B8600048720 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C089B21925955B8600048720 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C089B21B25955B8600048720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C089B23525956F4600048720 /* CarouselSnapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselSnapView.swift; sourceTree = "<group>"; };
+		C089B239259575F800048720 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C089B23C2595764B00048720 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C089B240259577CE00048720 /* CarouselListCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselListCenterView.swift; sourceTree = "<group>"; };
+		C089B2442595782E00048720 /* CardModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModelView.swift; sourceTree = "<group>"; };
+		C089B24725957E9100048720 /* CarouselListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselListView.swift; sourceTree = "<group>"; };
+		C089B2532595987900048720 /* CarouselsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,9 @@
 			children = (
 				C089B21225955B8500048720 /* Carousel_ViewsApp.swift */,
 				C089B21425955B8500048720 /* ContentView.swift */,
+				C089B257259598C900048720 /* Models */,
+				C089B259259598D000048720 /* ViewModels */,
+				C089B24F259597ED00048720 /* Views */,
 				C089B21625955B8600048720 /* Assets.xcassets */,
 				C089B21B25955B8600048720 /* Info.plist */,
 				C089B21825955B8600048720 /* Preview Content */,
@@ -67,6 +84,34 @@
 				C089B21925955B8600048720 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C089B24F259597ED00048720 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C089B2532595987900048720 /* CarouselsView.swift */,
+				C089B239259575F800048720 /* CardView.swift */,
+				C089B23525956F4600048720 /* CarouselSnapView.swift */,
+				C089B24725957E9100048720 /* CarouselListView.swift */,
+				C089B240259577CE00048720 /* CarouselListCenterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C089B257259598C900048720 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C089B23C2595764B00048720 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C089B259259598D000048720 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C089B2442595782E00048720 /* CardModelView.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C089B23625956F4600048720 /* CarouselSnapView.swift in Sources */,
+				C089B2542595987900048720 /* CarouselsView.swift in Sources */,
+				C089B24825957E9100048720 /* CarouselListView.swift in Sources */,
 				C089B21525955B8500048720 /* ContentView.swift in Sources */,
+				C089B2452595782E00048720 /* CardModelView.swift in Sources */,
+				C089B23D2595764B00048720 /* Card.swift in Sources */,
+				C089B23A259575F800048720 /* CardView.swift in Sources */,
+				C089B241259577CE00048720 /* CarouselListCenterView.swift in Sources */,
 				C089B21325955B8500048720 /* Carousel_ViewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
